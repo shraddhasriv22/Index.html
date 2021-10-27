@@ -1,0 +1,43 @@
+<head>
+    <style>
+        @keyframes style1{
+from{background-color: slateblue;}
+  to{background-color: violet;}    
+}
+@keyframes style2{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+#animation{
+    width: 400px; ;
+    height: 400px; 
+    background-color:blue ;
+    animation-name:style1 ;
+    animation-duration:5s ;
+    animation-iteration-count:infinite ;
+}
+#animation2{
+    width: 100px; 
+    height: 100px;  
+    position: relative;
+    background-color:green ;
+    animation-name: style2;
+    animation-direction:alternate-reverse ;
+    animation-duration: 10s;
+    animation-iteration-count:infinite ;
+}
+    </style>
+    <body>
+        <div style="width: 600px; height: 300px;" id="Animation">
+            <p> Animation Text</p>
+        </div>
+        <div id="Animation2">
+            <p> Animation Text 2</p>
+        </div>
+    </body>
+</head>
