@@ -7,10 +7,19 @@ from{background-color: slateblue;}
 @keyframes style2{
     from{
         margin-left: 100%;
+        width: 300px
     }
     to{
         margin-left: 0%;
+        width:300px;
     }
+}
+@keyframes style3{
+    0%{ background-color: chartreuse; left: 0px;top: 0px;}
+    25%{background-color: chocolate; left: 200px;top:0px;}
+    50%{background-color: crimson;left: 200px;top:200px;}
+    75%{background-color: darkblue;left:0px ;top:200px ;}
+    100%{background-color: darkgoldenrod;left:0px ;top:0px ;}
 }
 
 #animation{
@@ -31,6 +40,15 @@ from{background-color: slateblue;}
     animation-duration: 10s;
     animation-iteration-count:infinite ;
 }
+#animation3{
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    animation-name: style3;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
     </style>
     <body>
         <div style="width: 600px; height: 300px;" id="Animation">
@@ -38,6 +56,9 @@ from{background-color: slateblue;}
         </div>
         <div id="Animation2">
             <p> Animation Text 2</p>
+        </div>
+        <div id="Animation3">
+            <p> Animation Text 3</p>
         </div>
     </body>
 </head>
